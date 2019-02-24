@@ -2,68 +2,52 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>login</title>
+	<title>Update Profile</title>
 
 <style>
-
-.main {
-	width: 422px;
-	height: 376px;
-
-	margin: 170px auto 0 auto;
-
-	background-color: #fff;
-	border-radius: 7px;
-	/* box-shadow: 0px 17px 51px rgba(0,0,0,0.5); */
-	font-family: Helvetica;
-	font-weight: bold;
-}
 
 body { 
 	background-color: #858585;
 }
 
+.main {
+	width: 420px;
+	height: 373px;
+
+	margin: 175px auto 0 auto;
+
+	background-color: #ffffff;
+	border-radius: 1px;
+	box-shadow: 0px 13px 45px rgba(0,0,0,0.5);
+	font-family: Helvetica;
+	font-weight: bold;
+}
+
 .title {
-	padding: 18px 0px 5px 0px;
-	font-size: 24px;
+	padding: 16px 60px 0px 20px;
+
+	letter-spacing: -2.2px;
+	line-height: 40px;
+
+	font-size: 33px;	
+	font-family: Helvetica, Arial, sans-serif;
 }
 
-.social-bar {
-	margin: 18px 0px 36px 0px;
-
-	text-align: center;
-	border-radius: 10px;
-}
-
-.login-form {
-	margin: 24px 0px 0px 0px;
-	align-content: center;
-}
-
-.hr-or {
-	margin: 0px 20px 0px 20px;
-    background-color: #fff;
-    z-index: 2;
-    size: 1px;
-}
-
-.or {
-	position: relative;
-	top: -10px;
-	background-color: #fff;
-	color: #E0E0E0;
-	padding: 0px 5px 0px 5px;
-	z-index: 0;
+.email-title {
+	padding: 20px 0px 0px 20px;
+	
+	font-size: 13px;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 .form {
-	width: 368px;
-	height: 47px;
+	width: 378px;
+	height: 30px;
 
-	margin: 19px 0px 0px 0px;
-	padding: 0px 0px 0px 10px;
+	margin: 5px 0px 0px 20px;
+	padding: 0px 0px 0px 0px;
 
-	border-radius: 8px;
+	border-radius: 2px;
 
 	font-size: 14px;
 	font-family: Helvetica;
@@ -71,99 +55,200 @@ body {
 	border: 1px solid;
 }
 
-.pass {
-	background-image: url("https://svgshare.com/i/BHR.svg");
-	background-repeat: no-repeat;
-	background-position: 95.7% 50%;
-}
-
-.pass:valid {
-	border-color: #E0E0E0;
-}
-
-.pass:invalid {
-	border-color: #FF1100;
-	content: asdfsdaf;
-}
-
 .email {
-	border-color: #E0E0E0;
+	border-color: #ff1b5b;
 }
 
-.mail-login {
-	background-color: #26D07A;
+.warning-not-empty {
+	padding: 8px 0px 0px 20px;
+	
+	letter-spacing: -0.5px;
+
+	color: #ff1b5b;
+	font-size: 13px;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
-.vk-login {
-	background-color: #4A76A8;
+.phone-title {
+	padding: 13px 0px 0px 20px;
+	
+	font-size: 13px;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
-.fb-login {
-	background-color: #3B5998;
+.country{
+	overflow: hidden;
+	width: 400px;
 }
 
-.btn {
-	width: 380px;
-	height: 48px;
+.box{
+	margin: 5px 0px 0px 20px;
+	
+	white-space:nowrap;
+}
 
-	margin: 0px 0px 10px 0px;
-	border-radius: 7px;
+.box div{
+	display: inline-block;
+	width: 145px;
+	height: 22px;
+
+	padding: 8px 0px 0px 12px;
+	
+	border-radius: 2px;
+	border: 1px solid #848484;
+
+	letter-spacing: -0.5px;
 	font-size: 14px;
-	color: #fff;
-	border: 0;
-	font-weight: 1000;
-
-	box-shadow: 0px 0px 1px rgba(0,0,0,1);
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
 }
 
-.vk-icon {
+.flag-icon {
+	margin-right: 7px;
+}
+
+.close-icon {
 	position: relative;
-	top: 1px;
-	right: -5px;
+	top: -54px;
+	right: -68px;
+
+	width: 12px;
+	height: 12px;
+
+	color: #ffffff;
 }
 
-.fb-icon {
+.country {
+	width: 90px;
+	height: 22px;
+
+	margin-left: 20px;
+	padding: 8px 0px 0px 12px;
+
+	letter-spacing: -0.5px;
+	font-size: 14px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+
+.send-button {
+	height: 33px;
+}
+
+.update {
+	display: inline-block;
+	background-color: #21bc6f;
+
+	width: 111px;
+
+	margin-top: 60px;
+	margin-left: 20px;
+}
+
+.cancel {
+	display: inline-block;
+	background-color: #f0f0f0;
+
+	width: 105px;
+
+	margin-left:20px;
+}
+
+.countries {
+	width: 121px;
+	height: auto;
+
 	position: relative;
-	top: 1px;
-	right: -2px;
+
+	top: -94px;
+	left: 20px;
+
+	padding-top: 4px;
+	padding-bottom: 4px;
+
+	background-color: #ffffff;
+	border-radius: 2px;
+
+	letter-spacing: -0.5px;
+	font-size: 14px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+
+	box-shadow: 0px 0px 41px rgba(0,0,0,0.2);
 }
 
-.mail-icon {
-	position: relative;
-	top: 2px;
-	right: 8px;
-}
-			
-.icon {
-	filter: invert(1);
-}			
+.chosen-country {
+	width: auto;
+	height: 24px;
 
-.pass-req {
-	font-size: 12px;
-	position: solid;
-	align-content: left;
-	color: red;
-	margin: 7px 286px 15px 0px;
+	padding-top: 8px;
+	padding-left: 12px;
+
+	letter-spacing: -0.5px;
+	font-size: 14px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+
+	background-color: #ebebeb;
 }
-				
+
+.not-chosen-country {
+	width: auto;
+	height: 24px;
+
+
+	padding-top: 8px;
+	padding-left: 24px;
+}
+
+.ok-icon {
+	width: 8px;
+	height: 8px;
+}
 </style>
 				
 </head>
 <body>
 
-	<div class="main" align="center">
-		<!-- <div class="title">Логин</div>
-		<div class="social-bar">
-			<button class="vk-login btn"><img src='https://svgshare.com/i/BGv.svg' class="icon vk-icon" alt="vk-icon" /> Войти через Вконтакте</button>
-			<button class="fb-login btn"><img src='https://svgshare.com/i/BHS.svg' class="icon fb-icon" alt="fb-icon" /> Войти через Facebook</button>
+	<div class="main">
+		<div class="title">
+			Обновление контактных данных
+			<img src="https://image.flaticon.com/icons/svg/61/61155.svg" class="close-icon">
 		</div>
-		<hr class="hr-or" color=#E0E0E0> 
-		<div class="login-form">
-			<input class="email form" type="email" placeholder="Email">
-			<input class="pass form" type="password" required placeholder="Пароль">
-			<div class="pass-req">Введите пароль</div>
-			<button class="mail-login btn"><img src='https://svgshare.com/i/BHG.svg' class="icon mail-icon" alt="mail-icon" /> Войти через почту</button>
-		</div> -->
+		<div class="email-title">Email</div>
+		<div class="update-form">
+			<input class="email form" type="email">
+			<div class="warning-not-empty">Поле не должно быть пустым</div>
+			<div class="phone-title">Телефон</div>
+			<div class="container">
+				<div class="box">
+					<div>
+						<img class="flag-icon" src='https://img.imgsmail.ru/mail/ru/images/country_icons/ru.png'>
+						Россия
+					</div>
+					<div style="margin-left: -6px; width: 209px; border-color: #e0e0e0; letter-spacing: 0.6px;">+79999999999</div>
+				</div>
+			</div>
+			<div class="send-button update">
+
+			</div>
+
+			<div class="send-button cancel">
+
+			</div>
+			<div class="countries">
+					<div class="chosen-country">
+						<img class="ok-icon" src='https://png.pngtree.com/svg/20160616/718cb13a8b.svg'>
+						<img class="flag-icon" src='https://img.imgsmail.ru/mail/ru/images/country_icons/ru.png'>
+						Россия
+					</div>
+					<div class="not-chosen-country">
+						<img class="flag-icon" src='https://img.imgsmail.ru/mail/ru/images/country_icons/ua.png'>
+						Украина
+					</div>
+				</div>
+		</div>
+
 	</div>
 
 </body>
